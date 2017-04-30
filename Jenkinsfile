@@ -2,5 +2,12 @@
 @Library('github.com/fabric8io/fabric8-pipeline-library@master')
 def dummy
 node {
-  echo 'yay'
+  stage('#1'){
+    echo 'yay'
+  }
+
+  stage('#2'){
+    echo 'yo'
+  }
+
 }
